@@ -28,7 +28,19 @@
                 <div class="container">
                     <div class="row portfolioContainer">
                         <div class="col-md-12 profile1">
-                            <table class="table table-striped">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            All Service Categories
+                                        </div>
+                                        <div class="col-md-6">
+                                            <a href="{{ route('admin.add_service_categories') }}" class="btn btn-info pull-right">Add New</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <table class="table table-striped">
                                 <thead>
                                     <tr>
                                         <th>#</th>
@@ -49,6 +61,8 @@
                                 </tbody>
                             </table>
                             {{ $scategories->links() }}
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
