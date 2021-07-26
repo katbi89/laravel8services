@@ -22,7 +22,7 @@ class ServiceFactory extends Factory
      */
     public function definition()
     {
-        $service_name = $this->faker->unique()->words($nb=4,$asText=True);
+        $service_name = $this->faker->unique()->words($nb=4,$asText=true);
         $slug = Str::slug($service_name, "-");
         $imageName = 'service_' . $this->faker->unique()->numberBetween(1, 20). '.jpg';
         return [

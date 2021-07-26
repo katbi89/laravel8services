@@ -14,7 +14,7 @@ class ServiceCategorySeeder extends Seeder
      */
     public function run()
     {
-        DB::table("services_categories")->insert(
+        DB::table("service_categories")->insert(
             [
                 [
                     "name" => "AC",

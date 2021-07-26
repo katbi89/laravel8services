@@ -43,7 +43,7 @@ Route::middleware(['auth:sanctum', 'verified', 'authsprovider'])->group(function
 //For Admin
 Route::middleware(['auth:sanctum', 'verified', 'authadmin'])->group(function(){
     Route::get('/admin/dashboard', AdminDashboardComponent::class)->name('admin.dashboard');
-    Route::get('/admin/service-categories', AdminServiceCategoryComponent::class)->name('admin.services_categories');
+    Route::get('/admin/service-categories', AdminServiceCategoryComponent::class)->name('admin.service_categories');
     Route::get('/admin/service-category/add', AdminAddServiceCategoryComponent::class)->name('admin.add_service_categories');
     Route::get('/admin/service-category/edit/{category_id}', AdminEditServiceCategoryComponent::class)->name('admin.edit_service_category');
 });
