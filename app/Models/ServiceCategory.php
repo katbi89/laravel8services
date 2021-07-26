@@ -9,7 +9,7 @@ class ServiceCategory extends Model
 {
     use HasFactory;
 
-    protected $table = "services_categories";
+    protected $table = "service_categories";
 
     public function services() {
         return $this->hasMany(Service::class);

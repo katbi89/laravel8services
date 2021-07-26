@@ -14,11 +14,11 @@ class ServiceCategorySeeder extends Seeder
      */
     public function run()
     {
-        DB::table("services_categories")->insert(
+        DB::table("service_categories")->insert(
             [
                 [
-                    "name" => "AC",
-                    "slug" => "ac",
+                    "name" => "any00",
+                    "slug" => "any00",
                     "image" => "1521969345.png"
                 ],
                 [
